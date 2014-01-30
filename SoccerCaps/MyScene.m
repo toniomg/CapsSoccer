@@ -15,6 +15,7 @@
 @property (nonatomic, strong) CapSprite *capA1;
 @property (nonatomic, strong) CapSprite *capA2;
 @property (nonatomic, strong) BallSprite *ball;
+@property (nonatomic, strong) CapSprite *selectedNode;
 
 @end
 
@@ -41,23 +42,63 @@
         BallSprite *ball = [[BallSprite alloc] init];
         ball.position = CGPointMake(150, 100);
         [self addChild:ball];
-
     }
     return self;
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    UITouch *touch = [touches anyObject];
+- (void)didMoveToView:(SKView *)view {
+    UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panRecognized:)];
+    [self.view addGestureRecognizer:panRecognizer];
+}
+
+-(void)panRecognized:(UIPanGestureRecognizer *)gesture{
     
-    CGPoint location = [touch locationInNode:self];
-    SKSpriteNode *touchedNode = (SKSpriteNode *)[self nodeAtPoint:location];
-    
-    if ([touchedNode isMemberOfClass:[CapSprite class]])
+    if (gesture.state == UIGestureRecognizerStateBegan){
+        self.selectedNode = nil;
+        
+        CGPoint location = [gesture locationInView:gesture.view];
+        location = [self convertPointFromView:location];
+        SKSpriteNode *touchedNode = (SKSpriteNode *)[self nodeAtPoint:location];
+        
+        if ([touchedNode isMemberOfClass:[CapSprite class]])
+        {
+            self.selectedNode = (CapSprite*)touchedNode;
+        }
+    }
+    else if (gesture.state == UIGestureRecognizerStateChanged && !self.selectedNode)
     {
-        [touchedNode.physicsBody applyImpulse:CGVectorMake(100000, 0)];
+        CGPoint location = [gesture locationInView:gesture.view];
+        location = [self convertPointFromView:location];
+        SKSpriteNode *touchedNode = (SKSpriteNode *)[self nodeAtPoint:location];
+        
+        if ([touchedNode isMemberOfClass:[CapSprite class]])
+        {
+            self.selectedNode = (CapSprite*)touchedNode;
+        }
+    }
+    else if (gesture.state == UIGestureRecognizerStateEnded && self.selectedNode)
+    {
+        CGPoint velocityOfGesture = [gesture velocityInView:gesture.view];
+        [self.selectedNode.physicsBody applyImpulse:CGVectorMake(velocityOfGesture.x*1000, -velocityOfGesture.y*1000)];
+        self.selectedNode = nil;
     }
     
 }
+
+
+
+//-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+//    UITouch *touch = [touches anyObject];
+//    
+//    CGPoint location = [touch locationInNode:self];
+//    SKSpriteNode *touchedNode = (SKSpriteNode *)[self nodeAtPoint:location];
+//    
+//    if ([touchedNode isMemberOfClass:[CapSprite class]])
+//    {
+//        [touchedNode.physicsBody applyImpulse:CGVectorMake(100000, 0)];
+//    }
+//    
+//}
 
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */

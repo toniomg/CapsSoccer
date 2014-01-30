@@ -24,10 +24,10 @@
         self.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:SIZE/2];
         ;
         self.physicsBody.dynamic = YES;
-        self.physicsBody.friction = 0.8f;
-        self.physicsBody.restitution = 0.5;
+        self.physicsBody.friction = 1.0f;
+        self.physicsBody.restitution = 0.7;
         self.physicsBody.usesPreciseCollisionDetection = YES;
-        self.physicsBody.mass = 100;
+        self.physicsBody.mass = 10000;
         self.physicsBody.velocity = self.physicsBody.velocity;
         
         

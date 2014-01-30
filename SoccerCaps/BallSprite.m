@@ -27,7 +27,7 @@
         self.physicsBody.friction = 0.8f;
         self.physicsBody.restitution = 0.5;
         self.physicsBody.usesPreciseCollisionDetection = YES;
-        self.physicsBody.mass = 100;
+        self.physicsBody.mass = 10;
         self.physicsBody.allowsRotation = YES;
         self.physicsBody.velocity = self.physicsBody.velocity;
         

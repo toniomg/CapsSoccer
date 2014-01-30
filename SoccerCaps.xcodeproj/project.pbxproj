@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52C35A461899970900FBBC92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C35A451899970900FBBC92 /* Foundation.framework */; };
+		52C35A481899970900FBBC92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C35A471899970900FBBC92 /* CoreGraphics.framework */; };
+		52C35A4A1899970900FBBC92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C35A491899970900FBBC92 /* UIKit.framework */; };
+		52C35A4C1899970900FBBC92 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C35A4B1899970900FBBC92 /* SpriteKit.framework */; };
+		52C35A521899970900FBBC92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52C35A501899970900FBBC92 /* InfoPlist.strings */; };
+		52C35A541899970900FBBC92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C35A531899970900FBBC92 /* main.m */; };
+		52C35A581899970900FBBC92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C35A571899970900FBBC92 /* AppDelegate.m */; };
+		52C35A5B1899970900FBBC92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C35A591899970900FBBC92 /* Main.storyboard */; };
+		52C35A5E1899970900FBBC92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C35A5D1899970900FBBC92 /* ViewController.m */; };
+		52C35A611899970900FBBC92 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C35A601899970900FBBC92 /* MyScene.m */; };
+		52C35A631899970900FBBC92 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 52C35A621899970900FBBC92 /* Spaceship.png */; };
+		52C35A651899970900FBBC92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C35A641899970900FBBC92 /* Images.xcassets */; };
+		52C35A6C1899970900FBBC92 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C35A6B1899970900FBBC92 /* XCTest.framework */; };
+		52C35A6D1899970900FBBC92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C35A451899970900FBBC92 /* Foundation.framework */; };
+		52C35A6E1899970900FBBC92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C35A491899970900FBBC92 /* UIKit.framework */; };
+		52C35A761899970900FBBC92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52C35A741899970900FBBC92 /* InfoPlist.strings */; };
+		52C35A781899970900FBBC92 /* SoccerCapsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C35A771899970900FBBC92 /* SoccerCapsTests.m */; };
+		52C35A831899972900FBBC92 /* CapSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C35A821899972900FBBC92 /* CapSprite.m */; };
+		52C35A8718999BA200FBBC92 /* BallSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C35A8618999BA200FBBC92 /* BallSprite.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52C35A6F1899970900FBBC92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52C35A3A1899970900FBBC92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52C35A411899970900FBBC92;
+			remoteInfo = SoccerCaps;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52C35A421899970900FBBC92 /* SoccerCaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerCaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C35A451899970900FBBC92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		52C35A471899970900FBBC92 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		52C35A491899970900FBBC92 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		52C35A4B1899970900FBBC92 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		52C35A4F1899970900FBBC92 /* SoccerCaps-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoccerCaps-Info.plist"; sourceTree = "<group>"; };
+		52C35A511899970900FBBC92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52C35A531899970900FBBC92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52C35A551899970900FBBC92 /* SoccerCaps-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoccerCaps-Prefix.pch"; sourceTree = "<group>"; };
+		52C35A561899970900FBBC92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		52C35A571899970900FBBC92 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		52C35A5A1899970900FBBC92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52C35A5C1899970900FBBC92 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		52C35A5D1899970900FBBC92 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		52C35A5F1899970900FBBC92 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		52C35A601899970900FBBC92 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		52C35A621899970900FBBC92 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		52C35A641899970900FBBC92 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		52C35A6A1899970900FBBC92 /* SoccerCapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoccerCapsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C35A6B1899970900FBBC92 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		52C35A731899970900FBBC92 /* SoccerCapsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoccerCapsTests-Info.plist"; sourceTree = "<group>"; };
+		52C35A751899970900FBBC92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52C35A771899970900FBBC92 /* SoccerCapsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoccerCapsTests.m; sourceTree = "<group>"; };
+		52C35A811899972900FBBC92 /* CapSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapSprite.h; sourceTree = "<group>"; };
+		52C35A821899972900FBBC92 /* CapSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapSprite.m; sourceTree = "<group>"; };
+		52C35A8518999BA200FBBC92 /* BallSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallSprite.h; sourceTree = "<group>"; };
+		52C35A8618999BA200FBBC92 /* BallSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BallSprite.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52C35A3F1899970900FBBC92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C35A481899970900FBBC92 /* CoreGraphics.framework in Frameworks */,
+				52C35A4A1899970900FBBC92 /* UIKit.framework in Frameworks */,
+				52C35A4C1899970900FBBC92 /* SpriteKit.framework in Frameworks */,
+				52C35A461899970900FBBC92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C35A671899970900FBBC92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C35A6C1899970900FBBC92 /* XCTest.framework in Frameworks */,
+				52C35A6E1899970900FBBC92 /* UIKit.framework in Frameworks */,
+				52C35A6D1899970900FBBC92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52C35A391899970900FBBC92 = {
+			isa = PBXGroup;
+			children = (
+				52C35A4D1899970900FBBC92 /* SoccerCaps */,
+				52C35A711899970900FBBC92 /* SoccerCapsTests */,
+				52C35A441899970900FBBC92 /* Frameworks */,
+				52C35A431899970900FBBC92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52C35A431899970900FBBC92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52C35A421899970900FBBC92 /* SoccerCaps.app */,
+				52C35A6A1899970900FBBC92 /* SoccerCapsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52C35A441899970900FBBC92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52C35A451899970900FBBC92 /* Foundation.framework */,
+				52C35A471899970900FBBC92 /* CoreGraphics.framework */,
+				52C35A491899970900FBBC92 /* UIKit.framework */,
+				52C35A4B1899970900FBBC92 /* SpriteKit.framework */,
+				52C35A6B1899970900FBBC92 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52C35A4D1899970900FBBC92 /* SoccerCaps */ = {
+			isa = PBXGroup;
+			children = (
+				52C35A561899970900FBBC92 /* AppDelegate.h */,
+				52C35A571899970900FBBC92 /* AppDelegate.m */,
+				52C35A591899970900FBBC92 /* Main.storyboard */,
+				52C35A5C1899970900FBBC92 /* ViewController.h */,
+				52C35A5D1899970900FBBC92 /* ViewController.m */,
+				52C35A5F1899970900FBBC92 /* MyScene.h */,
+				52C35A601899970900FBBC92 /* MyScene.m */,
+				52C35A8418999B8000FBBC92 /* Sprites */,
+				52C35A621899970900FBBC92 /* Spaceship.png */,
+				52C35A641899970900FBBC92 /* Images.xcassets */,
+				52C35A4E1899970900FBBC92 /* Supporting Files */,
+			);
+			path = SoccerCaps;
+			sourceTree = "<group>";
+		};
+		52C35A4E1899970900FBBC92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52C35A4F1899970900FBBC92 /* SoccerCaps-Info.plist */,
+				52C35A501899970900FBBC92 /* InfoPlist.strings */,
+				52C35A531899970900FBBC92 /* main.m */,
+				52C35A551899970900FBBC92 /* SoccerCaps-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52C35A711899970900FBBC92 /* SoccerCapsTests */ = {
+			isa = PBXGroup;
+			children = (
+				52C35A771899970900FBBC92 /* SoccerCapsTests.m */,
+				52C35A721899970900FBBC92 /* Supporting Files */,
+			);
+			path = SoccerCapsTests;
+			sourceTree = "<group>";
+		};
+		52C35A721899970900FBBC92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52C35A731899970900FBBC92 /* SoccerCapsTests-Info.plist */,
+				52C35A741899970900FBBC92 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52C35A8418999B8000FBBC92 /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				52C35A811899972900FBBC92 /* CapSprite.h */,
+				52C35A821899972900FBBC92 /* CapSprite.m */,
+				52C35A8518999BA200FBBC92 /* BallSprite.h */,
+				52C35A8618999BA200FBBC92 /* BallSprite.m */,
+			);
+			name = Sprites;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52C35A411899970900FBBC92 /* SoccerCaps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52C35A7B1899970900FBBC92 /* Build configuration list for PBXNativeTarget "SoccerCaps" */;
+			buildPhases = (
+				52C35A3E1899970900FBBC92 /* Sources */,
+				52C35A3F1899970900FBBC92 /* Frameworks */,
+				52C35A401899970900FBBC92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoccerCaps;
+			productName = SoccerCaps;
+			productReference = 52C35A421899970900FBBC92 /* SoccerCaps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52C35A691899970900FBBC92 /* SoccerCapsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52C35A7E1899970900FBBC92 /* Build configuration list for PBXNativeTarget "SoccerCapsTests" */;
+			buildPhases = (
+				52C35A661899970900FBBC92 /* Sources */,
+				52C35A671899970900FBBC92 /* Frameworks */,
+				52C35A681899970900FBBC92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52C35A701899970900FBBC92 /* PBXTargetDependency */,
+			);
+			name = SoccerCapsTests;
+			productName = SoccerCapsTests;
+			productReference = 52C35A6A1899970900FBBC92 /* SoccerCapsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52C35A3A1899970900FBBC92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = AMG;
+				TargetAttributes = {
+					52C35A691899970900FBBC92 = {
+						TestTargetID = 52C35A411899970900FBBC92;
+					};
+				};
+			};
+			buildConfigurationList = 52C35A3D1899970900FBBC92 /* Build configuration list for PBXProject "SoccerCaps" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52C35A391899970900FBBC92;
+			productRefGroup = 52C35A431899970900FBBC92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52C35A411899970900FBBC92 /* SoccerCaps */,
+				52C35A691899970900FBBC92 /* SoccerCapsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52C35A401899970900FBBC92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C35A521899970900FBBC92 /* InfoPlist.strings in Resources */,
+				52C35A651899970900FBBC92 /* Images.xcassets in Resources */,
+				52C35A631899970900FBBC92 /* Spaceship.png in Resources */,
+				52C35A5B1899970900FBBC92 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C35A681899970900FBBC92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C35A761899970900FBBC92 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52C35A3E1899970900FBBC92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C35A611899970900FBBC92 /* MyScene.m in Sources */,
+				52C35A8718999BA200FBBC92 /* BallSprite.m in Sources */,
+				52C35A5E1899970900FBBC92 /* ViewController.m in Sources */,
+				52C35A831899972900FBBC92 /* CapSprite.m in Sources */,
+				52C35A581899970900FBBC92 /* AppDelegate.m in Sources */,
+				52C35A541899970900FBBC92 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C35A661899970900FBBC92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C35A781899970900FBBC92 /* SoccerCapsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52C35A701899970900FBBC92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52C35A411899970900FBBC92 /* SoccerCaps */;
+			targetProxy = 52C35A6F1899970900FBBC92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52C35A501899970900FBBC92 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52C35A511899970900FBBC92 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		52C35A591899970900FBBC92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52C35A5A1899970900FBBC92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52C35A741899970900FBBC92 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52C35A751899970900FBBC92 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52C35A791899970900FBBC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		52C35A7A1899970900FBBC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52C35A7C1899970900FBBC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoccerCaps/SoccerCaps-Prefix.pch";
+				INFOPLIST_FILE = "SoccerCaps/SoccerCaps-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		52C35A7D1899970900FBBC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoccerCaps/SoccerCaps-Prefix.pch";
+				INFOPLIST_FILE = "SoccerCaps/SoccerCaps-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		52C35A7F1899970900FBBC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SoccerCaps.app/SoccerCaps";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoccerCaps/SoccerCaps-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SoccerCapsTests/SoccerCapsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		52C35A801899970900FBBC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SoccerCaps.app/SoccerCaps";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoccerCaps/SoccerCaps-Prefix.pch";
+				INFOPLIST_FILE = "SoccerCapsTests/SoccerCapsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52C35A3D1899970900FBBC92 /* Build configuration list for PBXProject "SoccerCaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C35A791899970900FBBC92 /* Debug */,
+				52C35A7A1899970900FBBC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52C35A7B1899970900FBBC92 /* Build configuration list for PBXNativeTarget "SoccerCaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C35A7C1899970900FBBC92 /* Debug */,
+				52C35A7D1899970900FBBC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52C35A7E1899970900FBBC92 /* Build configuration list for PBXNativeTarget "SoccerCapsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C35A7F1899970900FBBC92 /* Debug */,
+				52C35A801899970900FBBC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52C35A3A1899970900FBBC92 /* Project object */;
+}
